@@ -1,0 +1,353 @@
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #9fc69f;
+
+}
+
+.relative {
+    margin: 20px 20px 20px 40px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #395e60;
+    border: 2px solid burlywood;
+    width: 1300px;
+    height: 700px;
+
+}
+
+#description {
+    border: 2px solid burlywood;
+    width: 85%;
+    height: 10%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#title {
+    border: 2px solid burlywood;
+    position: absolute;
+    width: 14.5%;
+    height: 12%;
+    top: 0;
+    left: 0;
+    font-family: sans-serif;
+    font-weight: bolder;
+    color: burlywood;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn {
+    border: 2px solid burlywood;
+    position: absolute;
+    top: 12%;
+    left: 0;
+    width: 14.5%;
+    height: 10%;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+#generate-button {
+    background-color: burlywood;
+    border-radius: 25px;
+    width: 100px;
+    margin-top: 13px;
+    text-align: center;
+    font-weight: bolder;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+#historyPanel {
+    border: 2px solid burlywood;
+    position: absolute;
+    overflow-y: auto;
+    width: 14.5%;
+    height: 68%;
+    top: 22.5%;
+    bottom: 10%;
+    left: 0;
+    color: black;
+    font-weight: bolder;
+
+}
+
+/*::-webkit-scrollbar-track {*/
+/*    background: #f1f1f1;*/
+/*}*/
+
+/*!* Handle *!*/
+/*::-webkit-scrollbar-thumb {*/
+/*    background: black;*/
+/*}*/
+
+/*!* Handle on hover *!*/
+/*::-webkit-scrollbar-thumb:hover {*/
+/*    background: #555;*/
+/*}*/
+
+#time {
+    border: 2px solid burlywood;
+    position: absolute;
+    width: 14.5%;
+    left: 0;
+    top: 90.5%;
+    bottom: 0;
+}
+
+#timeAndDate {
+    margin: 10px 0 0 58px;
+    color: burlywood;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#content {
+    border: 2px solid burlywood;
+    position: absolute;
+    width: 68%;
+    height: 75%;
+    top: 10.5%;
+    left: 14.68%;
+}
+
+#constraintsForm {
+    border: 2px solid burlywood;
+    position: absolute;
+    width: 16.9%;
+    height: 63%;
+    top: 10.5%;
+    right: 0;
+}
+
+#constraintsForm #name {
+    font-weight: bolder;
+    font-size: 17px;
+    color: burlywood;
+    margin-left: 10px;
+}
+
+label[for="minLengthOfName"],
+label[for="maxLengthOfName"] {
+    color: black;
+    font-size: 13px;
+    display: inline-block;
+}
+
+
+#minLengthOfName {
+    width: 45%;
+    right: 5px;
+    background-color: burlywood;
+    margin-left: 10%;
+}
+
+
+#maxLengthOfName {
+    width: 45%;
+    right: 5px;
+    background-color: burlywood;
+    margin-left: 10%;
+}
+
+label[for="checkBoxForName"] {
+    color: black;
+    font-size: 15px;
+    display: inline;
+}
+
+#checkBoxForName {
+    cursor: pointer;
+}
+
+.checkmark {
+    height: 16px;
+    width: 16px;
+    margin-left: 10%;
+}
+
+label[for="checkBoxForName"]:hover input ~ .checkmark {
+    background-color: burlywood;
+
+}
+
+/*!* Change checkbox color on hover *!*/
+/*label:hover #checkBox ~ .checkmark {*/
+/*    background-color: #aaa; !* Change the background color on hover *!*/
+/*}*/
+
+/*!* Style the checkmark itself *!*/
+/*.checkmark:after {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    display: none;*/
+/*}*/
+
+/*!* Show the checkmark when the checkbox is checked *!*/
+/*#checkBox:checked ~ .checkmark:after {*/
+/*    display: block;*/
+/*}*/
+
+/*!* Style the checkmark icon (black in this case) *!*/
+/*.checkmark:after {*/
+/*    left: 9px; !* Adjust the position based on your design *!*/
+/*    top: 5px; !* Adjust the position based on your design *!*/
+/*    width: 5px; !* Adjust the size based on your design *!*/
+/*    height: 10px; !* Adjust the size based on your design *!*/
+/*    border: solid black;*/
+/*    border-width: 0 2px 2px 0;*/
+/*    transform: rotate(45deg);*/
+/*}*/
+
+
+#constraintsForm #lastName {
+    font-weight: bolder;
+    font-size: 17px;
+    color: burlywood;
+    margin-left: 10px;
+}
+
+label[for="minLengthLastName"],
+label[for="maxLengthLastName"] {
+    color: black;
+    font-size: 13px;
+    display: inline-block;
+}
+
+#minLengthLastName {
+    width: 45%;
+    right: 5px;
+    background-color: burlywood;
+    margin-left: 10%;
+
+}
+
+#maxLengthLastName {
+    width: 45%;
+    right: 5px;
+    background-color: burlywood;
+    margin-left: 10%;
+}
+
+label[for="checkBoxForLastName"] {
+    color: black;
+    font-size: 15px;
+    display: inline;
+}
+
+#checkBoxForLastName {
+    cursor: pointer;
+}
+
+
+#constraintsForm #age {
+    font-weight: bolder;
+    font-size: 17px;
+    color: burlywood;
+    margin-left: 10px;
+}
+
+label[for="minLengthAge"],
+label[for="maxLengthAge"] {
+    color: black;
+    font-size: 13px;
+    display: inline-block;
+}
+
+#minLengthAge {
+    width: 45%;
+    right: 5px;
+    background-color: burlywood;
+    margin-left: 10%;
+
+}
+
+#maxLengthAge {
+    width: 45%;
+    right: 5px;
+    background-color: burlywood;
+    margin-left: 10%;
+}
+
+label[for="checkBoxForAge"] {
+    color: black;
+    font-size: 15px;
+    display: inline;
+}
+
+#checkBoxForAge {
+    cursor: pointer;
+}
+
+#constraintsForm #email {
+    font-weight: bolder;
+    font-size: 17px;
+    color: burlywood;
+    margin-left: 10px;
+}
+
+label[for="minLengthEmail"],
+label[for="maxLengthEmail"] {
+    color: black;
+    font-size: 13px;
+    display: inline-block;
+}
+
+#minLengthEmail {
+    width: 45%;
+    right: 5px;
+    background-color: burlywood;
+    margin-left: 10%;
+
+}
+
+#maxLengthEmail {
+    width: 45%;
+    right: 5px;
+    background-color: burlywood;
+    margin-left: 10%;
+}
+
+label[for="checkBoxForEmail"] {
+    color: black;
+    font-size: 15px;
+    display: inline;
+}
+
+#checkBoxForEmail {
+    cursor: pointer;
+}
+
+
+#displayMode {
+    border: 2px solid burlywood;
+    position: absolute;
+    width: 16.9%;
+    top: 74%;
+    height: 11.5%;
+    right: 0;
+}
+
+#pagination {
+    border: 2px solid burlywood;
+    position: absolute;
+    width: 85%;
+    height: 14%;
+    right: 0;
+    bottom: 0;
+}

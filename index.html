@@ -1,0 +1,131 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<div class="relative">
+    <div class="absolute" id="description"></div>
+    <div class="absolute" id="content"></div>
+    <div class="absolute" id="constraintsForm">
+        <div id="name">Name:<br>
+            <label for="minLengthOfName">Min Length: <input type="number" id="minLengthOfName" value="1"></label>
+            <label for="maxLengthOfName">Max Length:<input type="number" id="maxLengthOfName" value="5"></label>
+            <label for="checkBoxForName">capital letters, signs or numbers included.<input id="checkBoxForName"
+                                                                                           type="checkbox">
+                <span class="checkmark"></span></label>
+
+        </div>
+        <div id="lastName">Last Name:<br>
+            <label for="minLengthLastName">Min Length: <input type="number" id="minLengthLastName" value="1"></label>
+            <label for="maxLengthLastName">Max Length:<input type="number" id="maxLengthLastName" value="5"></label>
+            <label for="checkBoxForLastName">capital letters, signs or numbers included.<input id="checkBoxForLastName"
+                                                                                               type="checkbox">
+                <span class="checkmark"></span></label>
+        </div>
+        <div id="age">Age:<br>
+            <label for="minLengthAge">Min Length: <input type="number" id="minLengthAge" value="1"></label>
+            <label for="maxLengthAge">Max Length:<input type="number" id="maxLengthAge" value="5"></label>
+            <label for="checkBoxForAge">capital letters, signs or numbers included.<input id="checkBoxForAge"
+                                                                                          type="checkbox">
+                <span class="checkmark"></span></label>
+
+        </div>
+        <div id="email">Email:<br>
+            <label for="minLengthEmail">Min Length: <input type="number" id="minLengthEmail" value="1"></label>
+            <label for="maxLengthEmail">Max Length:<input type="number" id="maxLengthEmail" value="5"></label>
+            <label for="checkBoxForEmail">capital letters, signs or numbers included.<input id="checkBoxForEmail"
+                                                                                            type="checkbox">
+                <span class="checkmark"></span></label>
+
+        </div>
+
+    </div>
+    <div class="absolute" id="displayMode"></div>
+    <div class="absolute" id="title">Random Record Generator</div>
+    <div class="absolute" id="btn">
+        <button id="generate-button" onclick="generateRandomString()">BTN:<br>Generate</button>
+    </div>
+    <div class="absolute" id="historyPanel"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+        <p>More content...</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid cumque doloremque earum eligendi
+            esse
+            exercitationem fuga illo incidunt ipsa iure
+            molestiae necessitatibus officia, quas quidem rem sapiente velit veritatis.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium enim explicabo magni placeat ratione
+            rerum
+            veritatis! Aliquam architecto consectetur dolorem eaque illum magnam omnis optio placeat, quia ratione!
+            Natus,
+            neque.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias consequatur cumque enim necessitatibus
+            perferendis sed. Aliquid aperiam beatae consequuntur dolores ea harum iusto mollitia praesentium, provident
+            quisquam, sapiente, tempore.</p>
+        <!-- Add more content as needed --></div>
+    <div class="absolute" id="time">
+        <div id="timeAndDate"></div>
+    </div>
+    <div class="absolute" id="pagination"></div>
+</div>
+
+
+<!--<p id="randomString"></p>-->
+
+
+<!--<div class="left"></div>-->
+<!--<div class="bottom"></div>-->
+
+
+<!--<div id="output"></div>-->
+<!--<p id="demo1"></p>-->
+<!--<input type="number" id="maxNumberInputForName" value="0" min="0" max="100" step="1"><br><br>-->
+<!--<input type="number" id="minNumberInputForName" value="0" min="0" max="100" step="1"><br><br>-->
+<!--<input type="number" id="maxNumberInputForLastName" value="0" min="0" max="100" step="1"><br><br>-->
+<!--<input type="number" id="minNumberInputForLastName" value="0" min="0" max="100" step="1"><br><br>-->
+<!--<input type="number" id="maxNumberInputForAge" value="0" min="0" max="100" step="1"><br><br>-->
+<!--<input type="number" id="minNumberInputForAge" value="0" min="0" max="100" step="1"><br><br>-->
+<!--<input type="number" id="maxNumberInputForEmail" value="0" min="0" max="100" step="1"><br><br>-->
+<!--<input type="number" id="minNumberInputForEmail" value="0" min="0" max="100" step="1"><br><br>-->
+
+<!--<label>-->
+<!--    <input type="radio" name="yesNo" value="yes"> Yes-->
+<!--</label>-->
+
+<!--<label>-->
+<!--    <input type="radio" name="yesNo" value="no"> No-->
+<!--</label>-->
+
+<!--    <input type="radio" name="yesNo" value="yes" > Yes-->
+<!--</label>-->
+
+<!--<label>-->
+<!--    <input type="radio" name="yesNo" value="no"> No-->
+<!--</label>-->
+
+
+<!--<button id="generateButton">generate</button>-->
+<!--&lt;!&ndash;<input id="strlength" type="number" value="5" min="1" max="100"/>&ndash;&gt;-->
+<!--&lt;!&ndash;<button onclick="document.getElementById('demo1').innerHTML=updateOutput(randomRecordGenerator())">Generate</button>&ndash;&gt;-->
+<script src="./js/script.js"></script>
+<!--<script></script>-->
+<!--<script>-->
+<!--    function updateDateTime() {-->
+<!--        const currentDate = new Date();-->
+<!--        // Get the HTML element by its ID and set its content-->
+<!--        document.getElementById("timeAndDate").innerHTML = +currentDate.getDate() + "/"-->
+<!--            + (currentDate.getMonth() + 1) + "/"-->
+<!--            + currentDate.getFullYear() + "<br>"-->
+<!--            + currentDate.getHours() + ":"-->
+<!--            + currentDate.getMinutes() + ":"-->
+<!--            + currentDate.getSeconds();-->
+<!--    }-->
+
+<!--    updateDateTime();-->
+<!--    setInterval(updateDateTime, 1000);-->
+<!--</script>-->
+</body>
+</html>
