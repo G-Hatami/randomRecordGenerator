@@ -1,4 +1,3 @@
-
 body {
     margin: 0;
     display: flex;
@@ -124,6 +123,10 @@ body {
     height: 75%;
     top: 10.5%;
     left: 14.68%;
+    overflow-y: auto;
+    color: black;
+    font-weight: bolder;
+    font-size: 18px;
 }
 
 #constraintsForm {
@@ -185,35 +188,6 @@ label[for="checkBoxForName"]:hover input ~ .checkmark {
     background-color: burlywood;
 
 }
-
-/*!* Change checkbox color on hover *!*/
-/*label:hover #checkBox ~ .checkmark {*/
-/*    background-color: #aaa; !* Change the background color on hover *!*/
-/*}*/
-
-/*!* Style the checkmark itself *!*/
-/*.checkmark:after {*/
-/*    content: "";*/
-/*    position: absolute;*/
-/*    display: none;*/
-/*}*/
-
-/*!* Show the checkmark when the checkbox is checked *!*/
-/*#checkBox:checked ~ .checkmark:after {*/
-/*    display: block;*/
-/*}*/
-
-/*!* Style the checkmark icon (black in this case) *!*/
-/*.checkmark:after {*/
-/*    left: 9px; !* Adjust the position based on your design *!*/
-/*    top: 5px; !* Adjust the position based on your design *!*/
-/*    width: 5px; !* Adjust the size based on your design *!*/
-/*    height: 10px; !* Adjust the size based on your design *!*/
-/*    border: solid black;*/
-/*    border-width: 0 2px 2px 0;*/
-/*    transform: rotate(45deg);*/
-/*}*/
-
 
 #constraintsForm #lastName {
     font-weight: bolder;
@@ -341,7 +315,120 @@ label[for="checkBoxForEmail"] {
     top: 74%;
     height: 11.5%;
     right: 0;
+    font-size: 17px;
+    font-weight: bolder;
+    color: burlywood;
 }
+
+.container1 {
+    display: block;
+    position: relative;
+    padding-left: 160px;
+    /*margin-top: 8px;*/
+    /*margin-bottom: 12px;*/
+    /*margin-left: 8px;*/
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container2 {
+    display: block;
+    position: relative;
+    padding-left: 160px;
+    top: 7px;
+    /*margin-top: 8px;*/
+    /*margin-bottom: 12px;*/
+    /*margin-left: 8px;*/
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container1 input, .container2 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.circle {
+    position: absolute;
+    top: 0px;
+    left: 130px;
+    height: 18px;
+    width: 18px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.circle2 {
+    position: absolute;
+    top: 3px;
+    left: 130px;
+    height: 18px;
+    width: 18px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container1:hover input ~ .circle, .container2:hover input ~ .circle2 {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container1 input:checked ~ .circle, .container2 input:checked ~ .circle2 {
+    background-color: burlywood;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.circle:after, .circle2:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container1 input:checked ~ .circle:after, .container2 input:checked ~ .circle2:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container1 .circle:after, .container2 .circle2:after {
+    top: 6px;
+    bottom: 6px;
+    left: 6px;
+    right: 6px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: white;
+}
+
+
+/* Hide the browser's default radio button */
+.container1 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+
+
+/* On mouse-over, add a grey background color */
+.container1:hover input ~ .circle {
+    background-color: #ccc;
+}
+
 
 #pagination {
     border: 2px solid burlywood;
