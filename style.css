@@ -1,0 +1,449 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #9fc69f;
+
+}
+
+.relative {
+    margin: 20px 20px 20px 40px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #395e60;
+    border: 6px solid burlywood;
+    width: 1300px;
+    height: 700px;
+
+}
+
+#description {
+    border: 2px solid burlywood;
+    width: 85%;
+    height: 10%;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+#descriptionContent{
+    color: burlywood;
+    font-weight: bolder;
+    font-size:25px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#title {
+    border: 2px solid burlywood;
+    position: absolute;
+    width: 14.5%;
+    height: 12%;
+    top: 0;
+    left: 0;
+    font-family: sans-serif;
+    font-weight: bolder;
+    color: burlywood;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn {
+    border: 2px solid burlywood;
+    position: absolute;
+    top: 12%;
+    left: 0;
+    width: 14.5%;
+    height: 10%;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+#generate-button {
+    background-color: burlywood;
+    border-radius: 25px;
+    width: 100px;
+    margin-top: 13px;
+    text-align: center;
+    font-weight: bolder;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+#historyPanel {
+    border: 2px solid burlywood;
+    position: absolute;
+    overflow-y: auto;
+    width: 14.5%;
+    height: 68%;
+    top: 22.5%;
+    bottom: 10%;
+    left: 0;
+
+
+}
+#historyPanelContent{
+    font-weight: bolder;
+    /*font-size: 18px;*/
+    color: burlywood;
+    margin-left:15px;
+    margin-top: 6px;
+
+}
+#time {
+    border: 2px solid burlywood;
+    position: absolute;
+    width: 14.5%;
+    left: 0;
+    top: 90.5%;
+    bottom: 0;
+}
+
+#timeAndDate {
+    margin: 10px 0 0 58px;
+    color: burlywood;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#content {
+    border: 2px solid burlywood;
+    position: absolute;
+    width: 68%;
+    height: 75%;
+    top: 10.5%;
+    left: 14.68%;
+    overflow-y: auto;
+
+}
+#result{
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-left: 20px;
+
+}
+
+#constraintsForm {
+    border: 2px solid burlywood;
+    position: absolute;
+    width: 16.9%;
+    height: 63%;
+    top: 10.5%;
+    right: 0;
+}
+
+#constraintsForm #name {
+    font-weight: bolder;
+    font-size: 17px;
+    color: burlywood;
+    margin-left: 10px;
+    padding-top: 20px;
+}
+
+label[for="minLengthName"],
+label[for="maxLengthName"] {
+    color: black;
+    font-size: 13px;
+    display: inline-block;
+}
+
+
+#minLengthName {
+    width: 45%;
+    right: 5px;
+    background-color: burlywood;
+    margin-left: 10%;
+}
+
+
+#maxLengthName {
+    width: 45%;
+    right: 5px;
+    background-color: burlywood;
+    margin-left: 10%;
+}
+
+label[for="checkBoxForName"] {
+    color: black;
+    font-size: 15px;
+    display: inline;
+}
+
+#checkBoxForName {
+    cursor: pointer;
+}
+
+/*.checkmark {*/
+/*    height: 20px;*/
+/*    width: 20px;*/
+/*    margin-left: 10%;*/
+/*}*/
+
+
+#constraintsForm #lastName {
+    font-weight: bolder;
+    font-size: 17px;
+    color: burlywood;
+    margin-left: 10px;
+    padding-top: 10px;
+}
+
+label[for="minLengthLastName"],
+label[for="maxLengthLastName"] {
+    color: black;
+    font-size: 13px;
+    display: inline-block;
+}
+
+#minLengthLastName {
+    width: 45%;
+    right: 5px;
+    background-color: burlywood;
+    margin-left: 10%;
+
+}
+
+#maxLengthLastName {
+    width: 45%;
+    right: 5px;
+    background-color: burlywood;
+    margin-left: 10%;
+}
+
+label[for="checkBoxForLastName"] {
+    color: black;
+    font-size: 15px;
+    display: inline;
+}
+
+#checkBoxForLastName {
+    cursor: pointer;
+}
+
+
+#constraintsForm #age {
+    font-weight: bolder;
+    font-size: 17px;
+    color: burlywood;
+    margin-left: 10px;
+    padding-top: 10px;
+}
+
+label[for="minLengthAge"],
+label[for="maxLengthAge"] {
+    color: black;
+    font-size: 13px;
+    display: inline-block;
+}
+
+#minLengthAge {
+    width: 45%;
+    right: 5px;
+    background-color: burlywood;
+    margin-left: 10%;
+
+}
+
+#maxLengthAge {
+    width: 45%;
+    right: 5px;
+    background-color: burlywood;
+    margin-left: 10%;
+}
+
+label[for="checkBoxForAge"] {
+    color: black;
+    font-size: 15px;
+    display: inline;
+}
+
+#checkBoxForAge {
+    cursor: pointer;
+}
+
+#constraintsForm #email {
+    font-weight: bolder;
+    font-size: 17px;
+    color: burlywood;
+    margin-left: 10px;
+    padding-top: 10px;
+
+}
+
+label[for="minLengthEmail"],
+label[for="maxLengthEmail"] {
+    color: black;
+    font-size: 13px;
+    display: inline-block;
+}
+
+#minLengthEmail {
+    width: 45%;
+    right: 5px;
+    background-color: burlywood;
+    margin-left: 10%;
+
+}
+
+#maxLengthEmail {
+    width: 45%;
+    right: 5px;
+    background-color: burlywood;
+    margin-left: 10%;
+}
+
+label[for="checkBoxForEmail"] {
+    color: black;
+    font-size: 15px;
+    display: inline;
+}
+
+#checkBoxForEmail {
+    cursor: pointer;
+}
+
+
+#displayMode {
+    border: 2px solid burlywood;
+    position: absolute;
+    width: 16.9%;
+    top: 74%;
+    height: 11.5%;
+    right: 0;
+    font-size: 17px;
+    font-weight: bolder;
+    color: burlywood;
+}
+
+.container1 {
+    display: block;
+    position: relative;
+    padding-left: 160px;
+    /*margin-top: 8px;*/
+    /*margin-bottom: 12px;*/
+    /*margin-left: 8px;*/
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container2 {
+    display: block;
+    position: relative;
+    padding-left: 160px;
+    top: 7px;
+    /*margin-top: 8px;*/
+    /*margin-bottom: 12px;*/
+    /*margin-left: 8px;*/
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container1 input, .container2 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.circle {
+    position: absolute;
+    top: 0px;
+    left: 130px;
+    height: 18px;
+    width: 18px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.circle2 {
+    position: absolute;
+    top: 3px;
+    left: 130px;
+    height: 18px;
+    width: 18px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container1:hover input ~ .circle, .container2:hover input ~ .circle2 {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container1 input:checked ~ .circle, .container2 input:checked ~ .circle2 {
+    background-color: burlywood;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.circle:after, .circle2:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container1 input:checked ~ .circle:after, .container2 input:checked ~ .circle2:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container1 .circle:after, .container2 .circle2:after {
+    top: 6px;
+    bottom: 6px;
+    left: 6px;
+    right: 6px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: white;
+}
+
+
+/* Hide the browser's default radio button */
+.container1 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+
+
+/* On mouse-over, add a grey background color */
+.container1:hover input ~ .circle {
+    background-color: #ccc;
+}
+
+
+#pagination {
+    border: 2px solid burlywood;
+    position: absolute;
+    width: 85%;
+    height: 14%;
+    right: 0;
+    bottom: 0;
+}
